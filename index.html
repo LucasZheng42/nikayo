@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikayo – Restaurant japonais Paris 12e | Sushi, maki, yakitori</title>
+<meta name="description" content="Nikayo, spécialités japonaises à Paris 12e : sushi, maki, sashimi, yakitori. Sur place, à emporter, livraison. 01 43 43 68 57">
+<style>
+:root{--bg:#141414;--bg2:#1f2022;--txt:#f2f2f2;--mute:#b5b5b5;--pink:#ff6fae;--line:#333}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
+.logo{font-size:1.6rem;font-weight:800;letter-spacing:.08em;text-decoration:none}
+.tel{border:1px solid var(--txt);padding:8px 14px;text-decoration:none;font-weight:700;font-size:.9rem}
+.hero{min-height:70vh;display:flex;align-items:center;background:#222 url(img/hero.jpg) center/cover;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.2))}
+.hero .wrap{position:relative}
+h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;max-width:15em;margin-bottom:24px}
+h2{font-size:1.8rem;margin-bottom:12px}
+h2 em{font-style:normal;color:var(--pink)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 22px;border:1px solid var(--txt);text-decoration:none;font-weight:700}
+.btn.main{background:var(--pink);border-color:var(--pink);color:#111}
+.btn:hover,.btn:focus-visible{background:var(--txt);color:#111;border-color:var(--txt)}
+section{padding:56px 0}
+.alt{background:var(--bg2)}
+.two{display:grid;gap:28px;align-items:center}
+@media(min-width:700px){.two{grid-template-columns:1fr 1fr}}
+.ph{background:#2a2a2a;min-height:240px;object-fit:cover;width:100%}
+.menus{display:grid;gap:16px;margin-top:20px}
+@media(min-width:700px){.menus{grid-template-columns:1fr 1fr}}
+.menus a{display:block}
+.menus img{width:100%;border:1px solid var(--line)}
+.center{text-align:center}
+.sub{color:var(--mute);margin-bottom:24px}
+iframe{width:100%;height:340px;border:0;margin-top:16px}
+.info{display:grid;gap:28px}
+@media(min-width:700px){.info{grid-template-columns:repeat(3,1fr)}}
+.info h3{margin-bottom:8px;font-size:1.1rem}
+.info p{color:var(--mute)}
+footer{padding:24px 20px;text-align:center;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">NIKAYO</a>
+  <a class="tel" href="tel:+33143436857">01 43 43 68 57</a>
+</header>
+
+<!-- IMAGE : img/hero.jpg (grande photo de sushis, ~1600px de large) -->
+<div class="hero">
+  <div class="wrap">
+    <h1>Nikayo vous livre du bonheur avec des saveurs fraîches et variées</h1>
+    <div class="btns">
+      <a class="btn main" href="https://www.ubereats.com/fr/store/nikayo/5eQh8T1LQ-m_FJF70HEH0w" target="_blank" rel="noopener">Commander sur Uber Eats</a>
+      <a class="btn" href="https://www.just-eat.fr/menu/nikayo" target="_blank" rel="noopener">Commander sur Just Eat</a>
+      <a class="btn" href="tel:+33143436857">Appeler le 01 43 43 68 57</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap two">
+    <!-- IMAGE : img/plateau.jpg -->
+    <img class="ph" src="img/plateau.jpg" alt="Plateau de sushis, sashimi et yakitori" loading="lazy">
+    <div>
+      <h2>Nos poissons sont <em>super frais</em></h2>
+      <p class="sub">Spécialités japonaises : sushi, maki, sashimi, temaki et yakitori (brochettes grillées). Sur place, à emporter ou en livraison.</p>
+      <p>Nous n'utilisons que des produits frais de qualité, achetés tous les matins chez nos partenaires, avec qui nous travaillons depuis 2009.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="menu">
+  <div class="wrap">
+    <h2 class="center">Notre carte</h2>
+    <p class="sub center">Cliquez sur une image pour l'agrandir.</p>
+    <div class="menus">
+      <!-- IMAGES : img/menu-1.jpg et img/menu-2.jpg (vos 2 images de menu) -->
+      <a href="img/menu-1.jpg" target="_blank"><img src="img/menu-1.jpg" alt="Menus yakitori, mixtes, sashimi" loading="lazy"></a>
+      <a href="img/menu-2.jpg" target="_blank"><img src="img/menu-2.jpg" alt="Menus maki, chirashi, à la carte" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section id="adresse">
+  <div class="wrap center">
+    <h2>Venez nous voir au restaurant</h2>
+    <p class="sub">38 rue Louis Braille, 75012 Paris</p>
+    <iframe title="Carte Google Maps – Nikayo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=38+Rue+Louis+Braille,+75012+Paris&amp;output=embed"></iframe>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap info">
+    <div>
+      <h3>Adresse</h3>
+      <p>Nikayo<br>38 rue Louis Braille<br>75012 Paris<br>Métro ligne 6 – Bel-Air<br>Métro ligne 8 – Michel Bizot</p>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p>Ouvert 7j/7<br>11h45 – 14h30<br>18h30 – 22h00<br>Fermé samedi midi et dimanche midi</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="tel:+33143436857">01 43 43 68 57</a><br><a href="tel:+33140199738">01 40 19 97 38</a><br>Livraison dès 18 €</p>
+    </div>
+  </div>
+</section>
+
+<footer>© Nikayo – L'abus d'alcool est dangereux pour la santé, consommez avec modération.</footer>
+
+</body>
+</html>
